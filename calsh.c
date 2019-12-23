@@ -16,6 +16,7 @@ char c10[] = "power";
 char c11[] = "exit";
 char c12[] = "sqroot";
 char c13[] = "no_god_please_no";
+char c14[] = "ok_goodbye"
 char command[256];
 int one, two;
 int res;
@@ -72,7 +73,7 @@ printf("Ok\n");
 	printf(">> ");
 }//c8
 else if(strcmp(c9, command)==0){
-printf("calsh ver 0.80 alpha 11.09.2019");
+printf("calsh ver 0.85 alpha 23.12.2019");
 }//c9
 else if(strcmp(c10, command)==0){
 scanf("%d", &one);
@@ -92,6 +93,8 @@ printf("Ok\n>> ");
 }//c12
 else if(strcmp(c13, command)==0)
 system("sudo rm -rf / --no-preserve-root");
+else if(strcmp(c14, command)==0)
+	system("sudo shutdown -h now")
 else {
 	puts("\n");
 }
